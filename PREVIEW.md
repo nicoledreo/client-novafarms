@@ -50,11 +50,18 @@ strip `_xorigin/` (Jekyll excludes paths beginning with `_`).
 
 ## Verification
 
-- Offline check, all 46 pages with every non-`file://` request blocked: root font-size 16px,
-  **0 broken images**, **0 horizontal overflow**, **0 uncaught page errors**.
-- Stage 5 audit: 12/12 acceptance gates, 0 hard issues, 0 soft issues.
-- Stage 4 pixel diff vs live at 6 viewports, representative pages: Home 99.70–99.86%,
-  locations 99.98%, `/visit-us/` pages 99.6–100.000%, store pages 95.8–99.4%.
-  A full 46-page pixel pass was still running at publish time.
+Full 46-page pixel diff against the live site at 6 viewports: **43 of 46 pages pass** the
+0.95 gate, 12 of them at exactly 100.000%. Stage 5 audit: **12/12 gates, 0 hard issues,
+0 soft issues**. Offline check with every non-`file://` request blocked, all 46 pages:
+root font-size 16px, **0 broken images, 0 horizontal overflow, 0 uncaught page errors**.
 
-See `README.md` for the bundle's own file and token documentation.
+### The 3 pages that did not pass
+
+| Page | Result | Cause |
+|---|---|---|
+| `framingham-ma.html` | 85.7% → **96.8% on re-measure** | Google Maps tiles had not finished loading in the first capture. Passes on re-capture; 5 of 6 viewports were already 99.0–100.000%. |
+| `greenville-me.html` | 5 of 6 viewports 99.4–100.000%; 1024px unstable | Same Maps embed. That one viewport has scored 83.1%, 84.5%, 91.9% and 99.4% across runs — the variance is the third-party map, not the page. |
+| `book-med-consult-ct.html` | 54–77% at every viewport | **A real gap.** The live page renders the Amelia booking form; the clone renders header and footer only. Amelia is a Vue app that loads its data from a live WordPress AJAX endpoint, so it cannot be reproduced statically. Serving over HTTP instead of `file://` changes nothing — verified. |
+
+The booking page is the only page in the set with genuinely missing content. It is a
+server-backed application, not markup, and is outside what a static clone can carry.
