@@ -1,7 +1,7 @@
 {
   "shape": "mp",
   "domain": "novafarms.com",
-  "bundle_root": "C:\\Users\\kaylt\\clone-site-output\\novafarms.com.v8",
+  "bundle_root": "C:\\Users\\kaylt\\clone-site-output\\novafarms.com.v3",
   "pages": [
     {
       "name": "index.html",
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "name": "newbritain-ct.html",
+      "name": "locations-newbritain-ct.html",
       "source": "https://novafarms.com/locations/newbritain-ct/",
       "templates_injected": [
         "tabs",
@@ -153,25 +153,127 @@
       "name": "recreational-cannabis-dispensary-near-camden-nj.html",
       "source": "https://novafarms.com/visit-us/recreational-cannabis-dispensary-near-camden-nj/",
       "templates_injected": []
+    },
+    {
+      "name": "pharmacy.html",
+      "source": "https://novafarms.com/pharmacy/",
+      "templates_injected": []
+    },
+    {
+      "name": "pharmacy-newbritain-ct.html",
+      "source": "https://novafarms.com/pharmacy/newbritain-ct/",
+      "templates_injected": [
+        "tabs"
+      ]
+    },
+    {
+      "name": "team.html",
+      "source": "https://novafarms.com/pharmacy/newbritain-ct/team/",
+      "templates_injected": []
+    },
+    {
+      "name": "services.html",
+      "source": "https://novafarms.com/pharmacy/newbritain-ct/services/",
+      "templates_injected": []
+    },
+    {
+      "name": "medproviders-ct.html",
+      "source": "https://novafarms.com/medproviders-ct/",
+      "templates_injected": []
+    },
+    {
+      "name": "book-med-consult-ct.html",
+      "source": "https://novafarms.com/book-med-consult-ct/",
+      "templates_injected": []
+    },
+    {
+      "name": "med-portal.html",
+      "source": "https://novafarms.com/med-portal/",
+      "templates_injected": []
+    },
+    {
+      "name": "employee.html",
+      "source": "https://novafarms.com/med-portal/employee/",
+      "templates_injected": []
+    },
+    {
+      "name": "ma-vip.html",
+      "source": "https://novafarms.com/ma-vip/",
+      "templates_injected": []
+    },
+    {
+      "name": "join-vip.html",
+      "source": "https://novafarms.com/join-vip/",
+      "templates_injected": []
+    },
+    {
+      "name": "joinloyalty.html",
+      "source": "https://novafarms.com/joinloyalty/",
+      "templates_injected": [
+        "form-submit"
+      ]
+    },
+    {
+      "name": "shop.html",
+      "source": "https://novafarms.com/shop/",
+      "templates_injected": []
+    },
+    {
+      "name": "newbritain.html",
+      "source": "https://novafarms.com/shop/newbritain/",
+      "templates_injected": []
+    },
+    {
+      "name": "wholesale.html",
+      "source": "https://novafarms.com/wholesale/",
+      "templates_injected": []
+    },
+    {
+      "name": "review.html",
+      "source": "https://novafarms.com/review/",
+      "templates_injected": [
+        "tabs"
+      ]
+    },
+    {
+      "name": "budtender.html",
+      "source": "https://novafarms.com/budtender/",
+      "templates_injected": []
+    },
+    {
+      "name": "customer-education.html",
+      "source": "https://novafarms.com/customer-education/",
+      "templates_injected": []
+    },
+    {
+      "name": "privacy-policy.html",
+      "source": "https://novafarms.com/privacy-policy/",
+      "templates_injected": []
+    },
+    {
+      "name": "invest-successful-submission.html",
+      "source": "https://novafarms.com/invest_successful-submission/",
+      "templates_injected": []
     }
   ],
   "chrome_css_chars": 0,
-  "css_sources_consolidated": 630,
-  "assets_emitted": 1210,
+  "css_sources_consolidated": 1090,
+  "assets_emitted": 1888,
   "transformations": {
-    "links_removed": 524,
-    "styles_removed": 348,
-    "tracking_scripts_stripped": 184,
+    "links_removed": 957,
+    "styles_removed": 589,
+    "tracking_scripts_stripped": 312,
     "base_stripped": 0,
     "data_screen_label_stripped": 0,
-    "url_attrs_rewritten": 1093,
-    "internal_hrefs_rewritten": 521,
+    "url_attrs_rewritten": 1878,
+    "internal_hrefs_rewritten": 1330,
     "ajax_listings_injected": 0,
-    "noscript_rewritten": 127,
+    "noscript_rewritten": 216,
     "video_widgets_localised": 0,
     "templates_injected": [
       "tabs",
-      "carousel"
+      "carousel",
+      "form-submit"
     ]
   },
   "internal_link_map": [
@@ -293,27 +395,27 @@
     ],
     [
       "https://novafarms.com/locations/newbritain-ct/",
-      "newbritain-ct.html"
+      "locations-newbritain-ct.html"
     ],
     [
       "https://novafarms.com/locations/newbritain-ct",
-      "newbritain-ct.html"
+      "locations-newbritain-ct.html"
     ],
     [
       "//novafarms.com/locations/newbritain-ct/",
-      "newbritain-ct.html"
+      "locations-newbritain-ct.html"
     ],
     [
       "//novafarms.com/locations/newbritain-ct",
-      "newbritain-ct.html"
+      "locations-newbritain-ct.html"
     ],
     [
       "/locations/newbritain-ct/",
-      "newbritain-ct.html"
+      "locations-newbritain-ct.html"
     ],
     [
       "/locations/newbritain-ct",
-      "newbritain-ct.html"
+      "locations-newbritain-ct.html"
     ],
     [
       "https://novafarms.com/locations/woodbury-nj/",
@@ -818,8 +920,464 @@
     [
       "/visit-us/recreational-cannabis-dispensary-near-camden-nj",
       "recreational-cannabis-dispensary-near-camden-nj.html"
+    ],
+    [
+      "https://novafarms.com/pharmacy/",
+      "pharmacy.html"
+    ],
+    [
+      "https://novafarms.com/pharmacy",
+      "pharmacy.html"
+    ],
+    [
+      "//novafarms.com/pharmacy/",
+      "pharmacy.html"
+    ],
+    [
+      "//novafarms.com/pharmacy",
+      "pharmacy.html"
+    ],
+    [
+      "/pharmacy/",
+      "pharmacy.html"
+    ],
+    [
+      "/pharmacy",
+      "pharmacy.html"
+    ],
+    [
+      "https://novafarms.com/pharmacy/newbritain-ct/",
+      "pharmacy-newbritain-ct.html"
+    ],
+    [
+      "https://novafarms.com/pharmacy/newbritain-ct",
+      "pharmacy-newbritain-ct.html"
+    ],
+    [
+      "//novafarms.com/pharmacy/newbritain-ct/",
+      "pharmacy-newbritain-ct.html"
+    ],
+    [
+      "//novafarms.com/pharmacy/newbritain-ct",
+      "pharmacy-newbritain-ct.html"
+    ],
+    [
+      "/pharmacy/newbritain-ct/",
+      "pharmacy-newbritain-ct.html"
+    ],
+    [
+      "/pharmacy/newbritain-ct",
+      "pharmacy-newbritain-ct.html"
+    ],
+    [
+      "https://novafarms.com/pharmacy/newbritain-ct/team/",
+      "team.html"
+    ],
+    [
+      "https://novafarms.com/pharmacy/newbritain-ct/team",
+      "team.html"
+    ],
+    [
+      "//novafarms.com/pharmacy/newbritain-ct/team/",
+      "team.html"
+    ],
+    [
+      "//novafarms.com/pharmacy/newbritain-ct/team",
+      "team.html"
+    ],
+    [
+      "/pharmacy/newbritain-ct/team/",
+      "team.html"
+    ],
+    [
+      "/pharmacy/newbritain-ct/team",
+      "team.html"
+    ],
+    [
+      "https://novafarms.com/pharmacy/newbritain-ct/services/",
+      "services.html"
+    ],
+    [
+      "https://novafarms.com/pharmacy/newbritain-ct/services",
+      "services.html"
+    ],
+    [
+      "//novafarms.com/pharmacy/newbritain-ct/services/",
+      "services.html"
+    ],
+    [
+      "//novafarms.com/pharmacy/newbritain-ct/services",
+      "services.html"
+    ],
+    [
+      "/pharmacy/newbritain-ct/services/",
+      "services.html"
+    ],
+    [
+      "/pharmacy/newbritain-ct/services",
+      "services.html"
+    ],
+    [
+      "https://novafarms.com/medproviders-ct/",
+      "medproviders-ct.html"
+    ],
+    [
+      "https://novafarms.com/medproviders-ct",
+      "medproviders-ct.html"
+    ],
+    [
+      "//novafarms.com/medproviders-ct/",
+      "medproviders-ct.html"
+    ],
+    [
+      "//novafarms.com/medproviders-ct",
+      "medproviders-ct.html"
+    ],
+    [
+      "/medproviders-ct/",
+      "medproviders-ct.html"
+    ],
+    [
+      "/medproviders-ct",
+      "medproviders-ct.html"
+    ],
+    [
+      "https://novafarms.com/book-med-consult-ct/",
+      "book-med-consult-ct.html"
+    ],
+    [
+      "https://novafarms.com/book-med-consult-ct",
+      "book-med-consult-ct.html"
+    ],
+    [
+      "//novafarms.com/book-med-consult-ct/",
+      "book-med-consult-ct.html"
+    ],
+    [
+      "//novafarms.com/book-med-consult-ct",
+      "book-med-consult-ct.html"
+    ],
+    [
+      "/book-med-consult-ct/",
+      "book-med-consult-ct.html"
+    ],
+    [
+      "/book-med-consult-ct",
+      "book-med-consult-ct.html"
+    ],
+    [
+      "https://novafarms.com/med-portal/",
+      "med-portal.html"
+    ],
+    [
+      "https://novafarms.com/med-portal",
+      "med-portal.html"
+    ],
+    [
+      "//novafarms.com/med-portal/",
+      "med-portal.html"
+    ],
+    [
+      "//novafarms.com/med-portal",
+      "med-portal.html"
+    ],
+    [
+      "/med-portal/",
+      "med-portal.html"
+    ],
+    [
+      "/med-portal",
+      "med-portal.html"
+    ],
+    [
+      "https://novafarms.com/med-portal/employee/",
+      "employee.html"
+    ],
+    [
+      "https://novafarms.com/med-portal/employee",
+      "employee.html"
+    ],
+    [
+      "//novafarms.com/med-portal/employee/",
+      "employee.html"
+    ],
+    [
+      "//novafarms.com/med-portal/employee",
+      "employee.html"
+    ],
+    [
+      "/med-portal/employee/",
+      "employee.html"
+    ],
+    [
+      "/med-portal/employee",
+      "employee.html"
+    ],
+    [
+      "https://novafarms.com/ma-vip/",
+      "ma-vip.html"
+    ],
+    [
+      "https://novafarms.com/ma-vip",
+      "ma-vip.html"
+    ],
+    [
+      "//novafarms.com/ma-vip/",
+      "ma-vip.html"
+    ],
+    [
+      "//novafarms.com/ma-vip",
+      "ma-vip.html"
+    ],
+    [
+      "/ma-vip/",
+      "ma-vip.html"
+    ],
+    [
+      "/ma-vip",
+      "ma-vip.html"
+    ],
+    [
+      "https://novafarms.com/join-vip/",
+      "join-vip.html"
+    ],
+    [
+      "https://novafarms.com/join-vip",
+      "join-vip.html"
+    ],
+    [
+      "//novafarms.com/join-vip/",
+      "join-vip.html"
+    ],
+    [
+      "//novafarms.com/join-vip",
+      "join-vip.html"
+    ],
+    [
+      "/join-vip/",
+      "join-vip.html"
+    ],
+    [
+      "/join-vip",
+      "join-vip.html"
+    ],
+    [
+      "https://novafarms.com/joinloyalty/",
+      "joinloyalty.html"
+    ],
+    [
+      "https://novafarms.com/joinloyalty",
+      "joinloyalty.html"
+    ],
+    [
+      "//novafarms.com/joinloyalty/",
+      "joinloyalty.html"
+    ],
+    [
+      "//novafarms.com/joinloyalty",
+      "joinloyalty.html"
+    ],
+    [
+      "/joinloyalty/",
+      "joinloyalty.html"
+    ],
+    [
+      "/joinloyalty",
+      "joinloyalty.html"
+    ],
+    [
+      "https://novafarms.com/shop/",
+      "shop.html"
+    ],
+    [
+      "https://novafarms.com/shop",
+      "shop.html"
+    ],
+    [
+      "//novafarms.com/shop/",
+      "shop.html"
+    ],
+    [
+      "//novafarms.com/shop",
+      "shop.html"
+    ],
+    [
+      "/shop/",
+      "shop.html"
+    ],
+    [
+      "/shop",
+      "shop.html"
+    ],
+    [
+      "https://novafarms.com/shop/newbritain/",
+      "newbritain.html"
+    ],
+    [
+      "https://novafarms.com/shop/newbritain",
+      "newbritain.html"
+    ],
+    [
+      "//novafarms.com/shop/newbritain/",
+      "newbritain.html"
+    ],
+    [
+      "//novafarms.com/shop/newbritain",
+      "newbritain.html"
+    ],
+    [
+      "/shop/newbritain/",
+      "newbritain.html"
+    ],
+    [
+      "/shop/newbritain",
+      "newbritain.html"
+    ],
+    [
+      "https://novafarms.com/wholesale/",
+      "wholesale.html"
+    ],
+    [
+      "https://novafarms.com/wholesale",
+      "wholesale.html"
+    ],
+    [
+      "//novafarms.com/wholesale/",
+      "wholesale.html"
+    ],
+    [
+      "//novafarms.com/wholesale",
+      "wholesale.html"
+    ],
+    [
+      "/wholesale/",
+      "wholesale.html"
+    ],
+    [
+      "/wholesale",
+      "wholesale.html"
+    ],
+    [
+      "https://novafarms.com/review/",
+      "review.html"
+    ],
+    [
+      "https://novafarms.com/review",
+      "review.html"
+    ],
+    [
+      "//novafarms.com/review/",
+      "review.html"
+    ],
+    [
+      "//novafarms.com/review",
+      "review.html"
+    ],
+    [
+      "/review/",
+      "review.html"
+    ],
+    [
+      "/review",
+      "review.html"
+    ],
+    [
+      "https://novafarms.com/budtender/",
+      "budtender.html"
+    ],
+    [
+      "https://novafarms.com/budtender",
+      "budtender.html"
+    ],
+    [
+      "//novafarms.com/budtender/",
+      "budtender.html"
+    ],
+    [
+      "//novafarms.com/budtender",
+      "budtender.html"
+    ],
+    [
+      "/budtender/",
+      "budtender.html"
+    ],
+    [
+      "/budtender",
+      "budtender.html"
+    ],
+    [
+      "https://novafarms.com/customer-education/",
+      "customer-education.html"
+    ],
+    [
+      "https://novafarms.com/customer-education",
+      "customer-education.html"
+    ],
+    [
+      "//novafarms.com/customer-education/",
+      "customer-education.html"
+    ],
+    [
+      "//novafarms.com/customer-education",
+      "customer-education.html"
+    ],
+    [
+      "/customer-education/",
+      "customer-education.html"
+    ],
+    [
+      "/customer-education",
+      "customer-education.html"
+    ],
+    [
+      "https://novafarms.com/privacy-policy/",
+      "privacy-policy.html"
+    ],
+    [
+      "https://novafarms.com/privacy-policy",
+      "privacy-policy.html"
+    ],
+    [
+      "//novafarms.com/privacy-policy/",
+      "privacy-policy.html"
+    ],
+    [
+      "//novafarms.com/privacy-policy",
+      "privacy-policy.html"
+    ],
+    [
+      "/privacy-policy/",
+      "privacy-policy.html"
+    ],
+    [
+      "/privacy-policy",
+      "privacy-policy.html"
+    ],
+    [
+      "https://novafarms.com/invest_successful-submission/",
+      "invest-successful-submission.html"
+    ],
+    [
+      "https://novafarms.com/invest_successful-submission",
+      "invest-successful-submission.html"
+    ],
+    [
+      "//novafarms.com/invest_successful-submission/",
+      "invest-successful-submission.html"
+    ],
+    [
+      "//novafarms.com/invest_successful-submission",
+      "invest-successful-submission.html"
+    ],
+    [
+      "/invest_successful-submission/",
+      "invest-successful-submission.html"
+    ],
+    [
+      "/invest_successful-submission",
+      "invest-successful-submission.html"
     ]
   ],
   "clone_stage": 3,
-  "emitted_at": "2026-09-02T06:01:51.538Z"
+  "emitted_at": "2026-09-02T07:07:48.827Z"
 }
