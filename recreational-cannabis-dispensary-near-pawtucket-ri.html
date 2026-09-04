@@ -282,7 +282,7 @@ document.querySelectorAll("#yesButton").forEach((btn) => {
    *  STEP 2: State Selection
    ****************************************************/
   Object.keys(stateButtons).forEach((buttonId) => {
-    document.querySelectorAll("#" + buttonId).forEach((btn) => {
+    document.querySelectorAll("#" + buttonId + ", #" + buttonId + "-inline").forEach((btn) => {
       btn.addEventListener("click", function() {
         showStep(stateButtons[buttonId]);
       });
@@ -1191,7 +1191,7 @@ document.addEventListener("DOMContentLoaded", function() {
 				<div class="elementor-element elementor-element-1e9cd97 elementor-align-center elementor-widget__width-auto elementor-hidden-mobile elementor-widget elementor-widget-button" data-id="1e9cd97" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-sm" href="#" id="massachusettsButton">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="#" id="massachusettsButton-inline">
 						<span class="elementor-button-content-wrapper">
 									<span class="elementor-button-text">MA</span>
 					</span>
@@ -1202,7 +1202,7 @@ document.addEventListener("DOMContentLoaded", function() {
 				<div class="elementor-element elementor-element-0e14298 elementor-align-center elementor-widget__width-auto elementor-hidden-mobile elementor-widget elementor-widget-button" data-id="0e14298" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-sm" href="#" id="newjerseyButton">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="#" id="newjerseyButton-inline">
 						<span class="elementor-button-content-wrapper">
 									<span class="elementor-button-text">NJ</span>
 					</span>
@@ -1213,7 +1213,7 @@ document.addEventListener("DOMContentLoaded", function() {
 				<div class="elementor-element elementor-element-6d66f6f elementor-align-center elementor-widget__width-auto elementor-hidden-mobile elementor-widget elementor-widget-button" data-id="6d66f6f" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-sm" href="#" id="connecticutButton">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="#" id="connecticutButton-inline">
 						<span class="elementor-button-content-wrapper">
 									<span class="elementor-button-text">CT</span>
 					</span>
@@ -1224,7 +1224,7 @@ document.addEventListener("DOMContentLoaded", function() {
 				<div class="elementor-element elementor-element-d84e337 elementor-align-center elementor-widget__width-auto elementor-hidden-mobile elementor-widget elementor-widget-button" data-id="d84e337" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-sm" href="#" id="maineButton">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="#" id="maineButton-inline">
 						<span class="elementor-button-content-wrapper">
 									<span class="elementor-button-text">ME</span>
 					</span>
@@ -1235,7 +1235,7 @@ document.addEventListener("DOMContentLoaded", function() {
 				<div class="elementor-element elementor-element-1b0a015 elementor-align-center elementor-widget__width-auto elementor-hidden-mobile elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-button" data-id="1b0a015" data-element_type="widget" data-e-type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
 									<div class="elementor-button-wrapper">
-					<a class="elementor-button elementor-button-link elementor-size-sm" href="#" id="rhodeislandButton">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="#" id="rhodeislandButton-inline">
 						<span class="elementor-button-content-wrapper">
 									<span class="elementor-button-text">RI</span>
 					</span>
