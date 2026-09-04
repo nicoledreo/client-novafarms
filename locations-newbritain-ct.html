@@ -508,6 +508,16 @@ document.addEventListener("DOMContentLoaded", function() {
       overflow: hidden !important;
     }
 </style>
+<style id="sg-qa-fixes">
+/* === BEGIN oso-qa:RESP-002 === */
+/* container pinned to a fixed 1070px from 768px up; fluid only in the band where 1070px does not fit. Making it fluid narrows its five grid cells, and the widest button (ACCESSORIES, 171px) then needs 855px of grid to fit five across - so below 855 the same grid drops to three columns, which is what the design already does at narrower widths. Measured: overflow 17px at 768, 1px at 850, 0 at 860. */
+@media (min-width:768px) and (max-width:1069.98px){.elementor-7786 .elementor-element.elementor-element-5710f883{--width:100%}}
+/* === END oso-qa:RESP-002 === */
+/* === BEGIN oso-qa:RESP-002b === */
+
+@media (min-width:768px) and (max-width:854.98px){.elementor-7786 .elementor-element.elementor-element-5710f883{--e-con-grid-template-columns:repeat(3, 1fr)}}
+/* === END oso-qa:RESP-002b === */
+</style>
 </head>
 <body class="wp-singular page-template-default page page-id-7786 page-child parent-pageid-1742 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor pressidium-cc-theme hello-elementor-default elementor-default elementor-kit-7 elementor-page elementor-page-7786">
 

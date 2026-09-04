@@ -573,6 +573,12 @@ document.addEventListener("DOMContentLoaded", function() {
 /* === inline inline-15 === */
 .dutchie--iframe{width:100%;min-width:100%;height:100vh;border:none;background-color:#fff}
 </style>
+<style id="sg-qa-fixes">
+/* === BEGIN oso-qa:RESP-006 === */
+/* store select computes to 12.8px, which makes iOS zoom the page on focus. Touch pointers only; desktop untouched. */
+@media (pointer:coarse){#stores{font-size:16px}}
+/* === END oso-qa:RESP-006 === */
+</style>
 </head>
 <body class="wp-singular page-template-default page page-id-6169 page-child parent-pageid-4483 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor pressidium-cc-theme hello-elementor-default elementor-default elementor-kit-7 elementor-page elementor-page-6169">
 
