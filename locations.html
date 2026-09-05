@@ -1414,8 +1414,8 @@ display: none;
 .elementor-40 .elementor-element.elementor-element-f8e2780,.elementor-40 .elementor-element.elementor-element-d41ba46,.elementor-40 .elementor-element.elementor-element-721ef1d{color:#788D9A}
 /* === END oso-qa:A11Y-002-footer === */
 /* === BEGIN oso-qa:RESP-002 === */
-/* carousel next-arrow sits 20px outside the carousel; while the container is full-bleed (<=1140px) that 20px lands past the viewport and scrolls the page. The arrow is entirely off-screen at these widths, so clipping it is invisible. */
-@media (max-width:1140px){.elementor-1742 .elementor-element.elementor-element-f03a721{overflow-x:clip}}
+/* carousel next-arrow sits 20px outside the carousel, so it lands past the viewport and scrolls the page from 360 up to 1178 (measured clean at 1179). Below 1141 the arrow is entirely off-screen and clipping it cannot be seen; between 1141 and 1178 a 3-15px sliver is on screen, and clipping that sliver is the lesser harm against a page-wide horizontal scrollbar. */
+@media (max-width:1178px){.elementor-1742 .elementor-element.elementor-element-f03a721{overflow-x:clip}}
 /* === END oso-qa:RESP-002 === */
 /* === BEGIN oso-qa:A11Y-002-panel === */
 /* store-card address and hours: slate on the light panel, 3.57:1 to 4.51:1, lightness 49 to 43 percent. */

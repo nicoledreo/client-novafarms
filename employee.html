@@ -871,6 +871,10 @@ document.addEventListener("DOMContentLoaded", function() {
 /* the three footer text widgets read 3.84:1 on the dark footer; lightness 49% -> 54%, hue and saturation unchanged, 4.52:1. Fixed as a family: the engine dedupes contrast by a 4-level selector, and all three share one, so it only ever reported whichever came first. Scoped to the widgets, NOT to the shared colour variable, which also drives 20 border-colors, 12 background-colors and 13 fills. */
 .elementor-40 .elementor-element.elementor-element-f8e2780,.elementor-40 .elementor-element.elementor-element-d41ba46,.elementor-40 .elementor-element.elementor-element-721ef1d{color:#788D9A}
 /* === END oso-qa:A11Y-002-footer === */
+/* === BEGIN oso-qa:RESP-006 === */
+/* same 12.8px store select as newbritain.html. Missed first time because this page is an orphan - nothing links to it and there is no sitemap - so the auditor never crawls it and the rule looked cleared. */
+@media (pointer:coarse){#stores{font-size:16px}}
+/* === END oso-qa:RESP-006 === */
 </style>
 </head>
 <body class="wp-singular page-template-default page page-id-6208 page-child parent-pageid-6211 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor pressidium-cc-theme hello-elementor-default elementor-default elementor-kit-7 elementor-page elementor-page-6208">

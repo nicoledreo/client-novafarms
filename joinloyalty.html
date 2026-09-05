@@ -1153,6 +1153,10 @@ display: none;
 /* the three footer text widgets read 3.84:1 on the dark footer; lightness 49% -> 54%, hue and saturation unchanged, 4.52:1. Fixed as a family: the engine dedupes contrast by a 4-level selector, and all three share one, so it only ever reported whichever came first. Scoped to the widgets, NOT to the shared colour variable, which also drives 20 border-colors, 12 background-colors and 13 fills. */
 .elementor-40 .elementor-element.elementor-element-f8e2780,.elementor-40 .elementor-element.elementor-element-d41ba46,.elementor-40 .elementor-element.elementor-element-721ef1d{color:#788D9A}
 /* === END oso-qa:A11Y-002-footer === */
+/* === BEGIN oso-qa:RESP-006 === */
+/* six loyalty-signup form fields compute to 15px, which makes iOS zoom the page on focus. Touch pointers only; desktop untouched. Another orphan page the crawler never reaches, so the rule looked clear. */
+@media (pointer:coarse){#form-field-first_name,#form-field-last_Name,#form-field-dob,#form-field-phone,#form-field-email,#form-field-field_629e1c2{font-size:16px}}
+/* === END oso-qa:RESP-006 === */
 </style>
 </head>
 <body class="wp-singular page-template-default page page-id-8563 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor pressidium-cc-theme hello-elementor-default elementor-default elementor-kit-7 elementor-page elementor-page-8563">

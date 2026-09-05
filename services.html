@@ -511,6 +511,10 @@ document.addEventListener("DOMContentLoaded", function() {
 /* the three footer text widgets read 3.84:1 on the dark footer; lightness 49% -> 54%, hue and saturation unchanged, 4.52:1. Fixed as a family: the engine dedupes contrast by a 4-level selector, and all three share one, so it only ever reported whichever came first. Scoped to the widgets, NOT to the shared colour variable, which also drives 20 border-colors, 12 background-colors and 13 fills. */
 .elementor-40 .elementor-element.elementor-element-f8e2780,.elementor-40 .elementor-element.elementor-element-d41ba46,.elementor-40 .elementor-element.elementor-element-721ef1d{color:#788D9A}
 /* === END oso-qa:A11Y-002-footer === */
+/* === BEGIN oso-qa:RESP-002 === */
+/* a full-bleed carousel container 1000px wide carrying margin-right:-232px, so it hangs 232px past the viewport between 768 and 1099 (clean at 1100 and above, and below 768 where the layout reflows). Clipping is the right fix rather than removing the negative margin: the overhanging content belongs to a Swiper and stays reachable through its own arrows and swipe, so nothing becomes unreachable - only the dead page-level sideways scroll goes. */
+@media (min-width:768px) and (max-width:1099.98px){.elementor-7977 .elementor-element.elementor-element-937038e{overflow-x:clip}}
+/* === END oso-qa:RESP-002 === */
 </style>
 </head>
 <body class="wp-singular page-template-default page page-id-7977 page-child parent-pageid-7418 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor pressidium-cc-theme hello-elementor-default elementor-default elementor-kit-7 elementor-page elementor-page-7977">

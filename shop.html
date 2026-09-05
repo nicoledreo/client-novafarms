@@ -515,6 +515,10 @@ document.addEventListener("DOMContentLoaded", function() {
 /* the three footer text widgets read 3.84:1 on the dark footer; lightness 49% -> 54%, hue and saturation unchanged, 4.52:1. Fixed as a family: the engine dedupes contrast by a 4-level selector, and all three share one, so it only ever reported whichever came first. Scoped to the widgets, NOT to the shared colour variable, which also drives 20 border-colors, 12 background-colors and 13 fills. */
 .elementor-40 .elementor-element.elementor-element-f8e2780,.elementor-40 .elementor-element.elementor-element-d41ba46,.elementor-40 .elementor-element.elementor-element-721ef1d{color:#788D9A}
 /* === END oso-qa:A11Y-002-footer === */
+/* === BEGIN oso-qa:RESP-002 === */
+/* the same carousel next-arrow overhang as locations.html, on the shop page own carousel widget. Measured band 360-1178, constant +20px. Missed in the first pass because the round sampled the pages it had already decided to edit; an independent sweep of all 46 pages found it. */
+@media (max-width:1178px){.elementor-4483 .elementor-element.elementor-element-5ba588c{overflow-x:clip}}
+/* === END oso-qa:RESP-002 === */
 /* === BEGIN oso-qa:A11Y-002-panel === */
 /* store-card address and hours: slate on the light panel, 3.57:1 to 4.51:1, lightness 49 to 43 percent. */
 .elementor-4483 .elementor-element.elementor-element-480971f,.elementor-4483 .elementor-element.elementor-element-cde22b9,.elementor-4483 .elementor-element.elementor-element-f8589ed,.elementor-4483 .elementor-element.elementor-element-b1c45c6,.elementor-4483 .elementor-element.elementor-element-6c7bcfd,.elementor-4483 .elementor-element.elementor-element-43b1512,.elementor-4483 .elementor-element.elementor-element-25d33fb,.elementor-4483 .elementor-element.elementor-element-d15fcbc,.elementor-4483 .elementor-element.elementor-element-0ab5603,.elementor-4483 .elementor-element.elementor-element-5eb5b2c,.elementor-4483 .elementor-element.elementor-element-89165f5,.elementor-4483 .elementor-element.elementor-element-e88c8d3{color:#5D707C}
