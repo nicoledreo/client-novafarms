@@ -335,15 +335,25 @@ function attemptToShowPopup() {
  * 4) WAIT FOR POPUP MODULE TO BE READY
  ****************************************************/
 function checkForPopupModule() {
-  if (
+  checkForPopupModule.tries = (checkForPopupModule.tries || 0) + 1;
+  var moduleReady =
     typeof elementorProFrontend !== "undefined" &&
     elementorProFrontend.modules &&
-    elementorProFrontend.modules.popup
-  ) {
+    elementorProFrontend.modules.popup;
+  /* Pro registers the popup document class through a hook, so documents[6871] can exist while still
+     being the base class with no getModal. showPopup() would throw on it. Wait for the real thing. */
+  var documentReady = false;
+  try {
+    var docs = elementorFrontend.documentsManager.documents;
+    documentReady = !!docs && !!docs[6871] && typeof docs[6871].getModal === "function";
+  } catch (e) { documentReady = false; }
+  if (moduleReady && documentReady) {
     attemptToShowPopup();
-  } else {
-    debugLog("Popup module not ready—retrying in 500ms...");
+  } else if (checkForPopupModule.tries < 40) {
+    debugLog("Popup module or document not ready—retrying in 500ms...");
     setTimeout(checkForPopupModule, 500);
+  } else {
+    debugLog("Popup document never became ready after 20s—giving up.");
   }
 }
 
