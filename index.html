@@ -1784,6 +1784,18 @@ html.nf-about--js .nf-about__toggle:focus-visible {
 	outline-offset: 3px;
 }
 </style>
+<style id="nf-band-747-tighten">
+/* Tighten the "BUILT FROM FRIENDSHIP" band (0747d94).
+   It was pinned at --min-height:85vh == 765px at 1440x900 while holding ~288px
+   of type (3 lines x 96px) plus the star. That is ~477px of pure floor, and it
+   sat directly above the About Us band, so it dominated the scroll distance to
+   the Reviews carousel. 60vh == 540px keeps 47px of clearance above the star and
+   no content overflows its column (measured), while returning 225px to the fold.
+   The rule is unscoped, so it applies at every width. Measured after the change:
+   desktop 765->540 (column content 540, star clearance 47px) and mobile 690->487
+   (column content 367, star clearance 60px). Neither column overflows. */
+.elementor-6581 .elementor-element.elementor-element-0747d94{--min-height:60vh;}
+</style>
 </head>
 <body class="home wp-singular page-template-default page page-id-6581 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor pressidium-cc-theme hello-elementor-default elementor-default elementor-kit-7 elementor-page elementor-page-6581">
 
