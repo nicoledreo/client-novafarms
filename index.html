@@ -1796,6 +1796,18 @@ html.nf-about--js .nf-about__toggle:focus-visible {
    (column content 367, star clearance 60px). Neither column overflows. */
 .elementor-6581 .elementor-element.elementor-element-0747d94{--min-height:60vh;}
 </style>
+<style id="nf-about-center">
+/* Centre the About Us card contents (owner request).
+   The card ba94abe already centres its flex ITEMS (that is why the star is
+   centred), but the text-editor widget a93f3a4 had no text-align, so the copy
+   and the toggle both inherited left. One rule on the widget centres the lead,
+   the two expanded paragraphs and the inline-block toggle together.
+   Deliberately NOT gated on nf-about--js: this is a visual choice that should
+   hold whether or not the collapse script runs, so the JS-off render is centred
+   too. Same selector shape as the export (0,3,0) and later in source order. */
+.elementor-6581 .elementor-element.elementor-element-a93f3a4{text-align:center;}
+.elementor-6581 .elementor-element.elementor-element-a93f3a4 .nf-about__toggle-wrap{text-align:center;}
+</style>
 </head>
 <body class="home wp-singular page-template-default page page-id-6581 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor pressidium-cc-theme hello-elementor-default elementor-default elementor-kit-7 elementor-page elementor-page-6581">
 
